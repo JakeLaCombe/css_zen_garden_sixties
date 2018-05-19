@@ -1,0 +1,77 @@
+@import url("https://use.typekit.net/cdj2qpz.css");
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "gira-sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'mighty-slab', serif;
+	font-size: 54px;
+	font-weight: normal;
+}
+
+.intro {
+	display: grid;
+	grid-template-areas:
+	"a b b b b b b"
+	"a c c c c c c";
+}
+
+.intro > * {
+	padding: 10px 20px;
+}
+
+[role="banner"] {
+	grid-area: a;
+	background: #f00;
+}
+
+.summary {
+	grid-area: b;
+	background: #ab9ce2;
+}
+
+.preamble {
+	grid-area: c;
+	background: #9fc3b2;
+}
+
+#zen-supporting {
+	display: grid;
+	grid-template-areas:
+		". a b ."
+		". c d ."
+		"footer footer footer footer";
+}
+
+#zen-supporting > * {
+	padding: 10px 20px;
+}
+
+#zen-supporting .explanation {
+	grid-area: a;
+}
+
+#zen-supporting .participation {
+	grid-area: b;
+}
+
+#zen-supporting .benefits {
+	grid-area: c;
+}
+
+#zen-supporting .requirements {
+	grid-area: d;
+}
+
+#zen-supporting footer {
+	grid-area: footer;
+	background: #0f0;
+}
+
+.sidebar .wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
